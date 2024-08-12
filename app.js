@@ -10,10 +10,12 @@ app.use(bodyParser.json());
 
 // MySQL Connection Setup
 const db = mysql.createConnection({
-    host: '34.42.69.26',
-    user: 'logical-air-327216:us-central1:root',
-    password: 'deepraj',
-    database: 'MyDatabase',
+    host: 'mysql-4ec1453-evanedeepraj-0e3b.k.aivencloud.com',
+    user: 'avnadmin',
+    password: 'AVNS_5S5fw5Yol9tZ7_PtSxJ',
+    database: 'myDatabase',
+	port: 11120,  
+	connectTimeout: 10000 
 });
 
 db.connect((err) => {
