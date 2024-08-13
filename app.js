@@ -14,8 +14,8 @@ const db = mysql.createConnection({
     user: 'avnadmin',
     password: 'AVNS_5S5fw5Yol9tZ7_PtSxJ',
     database: 'myDatabase',
-	port: 11120,  
-	connectTimeout: 10000 
+	port: 11120
+	
 });
 
 db.connect((err) => {
