@@ -14,7 +14,9 @@ const db = mysql.createConnection({
     user: 'avnadmin',
     password: 'AVNS_5S5fw5Yol9tZ7_PtSxJ',
     database: 'myDatabase',
-	port: 11120
+	port: 11120,
+	keepAliveInitialDelay: 10000, // 0 by default.
+	enableKeepAlive: true
 	
 });
 
